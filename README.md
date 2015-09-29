@@ -1,4 +1,4 @@
-# Dorado Dossier
+# Dorado Dossier 0.1.0
 **Dossier**, A collection of papers giving detailed information about a particular person or subject.
 
 Dorado Dossier is a '*work in progress*' project that aspires to be a documentation & reporting library, leveraging the power of the .NET Razor Engine, to allow developers to create dynamic documents with minimal effort.
