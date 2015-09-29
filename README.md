@@ -2,7 +2,7 @@
 **Dossier**, A collection of papers giving detailed information about a particular person or subject.
 
 Dorado Dossier is a 'Work in Progress' project that aspires to be a documentation & reporting library, leveraging the power
-and familiarity of the .NET Razor Engine that allows developers to create dynamically generated documents with minimal effort.
+and familiarity of the .NET Razor Engine that allows developers to create dynamically generated documents with minimal effort. Initial development intended for use within our team.
 
 **N.B**: This project is in the very early stages of research & development and is not ready for use in production environments.
 Feedback at this point in time is valuable and all suggestions will be considered for the modules project plan.
@@ -66,6 +66,14 @@ Dossier<IQueryable<string>> dossier = new Dossier<IQueryable<string>>();
 
 // Binding a Dossier returns the rendered template as a string representation of the HTML output.
 string html = dossier.BindDossier("MyDocument");
+```
+
+##### Result
+```
+<ul>
+  <li>Foo</li>
+  <li>Bar</li>
+</ul>
 ```
 
 ## License
