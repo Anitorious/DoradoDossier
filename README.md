@@ -72,5 +72,15 @@ string html = dossier.BindDossier("MyDocument");
 </ul>
 ```
 
+## Roadmap
+* Implementation of alternative templating engines, for example; Handlebars, Moustache, Jade.
+* Implmentation of folio binding (Paged Documents) for paginating large documents.
+* Refactor of IResolverConfiguration to facilitate more flexibility in implmentation of dossiers.
+* Implementation of custom dossier renderers to give developers the ability to expand the Dorado toolset.
+* Implementation of dossier to file conversions for popular formats, for example; PDF, Word, Excel.
+* Implmentation of dossier to print conversions to facilitate printer friendly dossier feeds.
+* Implementation of parameterised dossiers that will generate tailored dossiers based upon user input.
+* Implmentation of dossier cover & title folios.
+
 ## License
 The MIT License (MIT). Please see License File for more information.
