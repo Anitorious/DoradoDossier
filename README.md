@@ -5,7 +5,7 @@ Dorado Dossier is a 'Work in Progress' project that aspires to be a documentatio
 and familiarity of the .NET Razor Engine that allows developers to create dynamically generated documents with minimal effort.
 
 **N.B**: This project is in the very early stages of research & development and is not ready for use in production environments.
-Feedback at this point in time is valuable and all suggestions will be considered for this modules project plan.
+Feedback at this point in time is valuable and all suggestions will be considered for the modules project plan.
 
 ## Installation
 via Package Manager Console
