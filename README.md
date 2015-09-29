@@ -1,11 +1,9 @@
 # Dorado Dossier
 **Dossier**, A collection of papers giving detailed information about a particular person or subject.
 
-Dorado Dossier is a 'Work in Progress' project that aspires to be a documentation & reporting library, leveraging the power
-and familiarity of the .NET Razor Engine that allows developers to create dynamically generated documents with minimal effort. Initial development intended for use within our team.
+Dorado Dossier is a '*work in progress*' project that aspires to be a documentation & reporting library, leveraging the power of the .NET Razor Engine, to allow developers to create dynamic documents with minimal effort.
 
-**N.B**: This project is in the very early stages of research & development and is not ready for use in production environments.
-Feedback at this point in time is valuable and all suggestions will be considered for the modules project plan.
+**N.B**: This project is currently in early stages of development and is not ready for use in production environments. Feedback is valuable to the improvement and growth of the project and every suggestion will be incorperated where appropriate.
 
 ## Installation
 via Package Manager Console
@@ -15,14 +13,12 @@ Install-Package DoradoDossier
 
 ## Getting Started
 ### Dossier
-Dorado works on the basis that users of the library follow a strict naming convention. To begin using Dorado, one must first
-create a folder in the route of their project with the alias, 'Dossier'. 
+Dorado works on the basis that users of the library follow a strict naming convention. To begin using Dorado, one must first create a folder in the route of their project with the alias, 'Dossier'. 
 
-Within this folder, we create a folder for each document we'd like the framework to resolve and render, with each folder containing
-two files.
+Within this folder, we must create a folder for each document we'd like the library to resolve and render, with each folder containing:
 
-1.  The .cs file that inherits the IDossierQuery<T> interface named after the folder it is contained within with a post-fix of 'Dossier'.
-2.  The razor partial template file named '_template'.
+1. .cs file that inherits the IDossierQuery&lt;T&gt; interface with an alias of *"Parent Folder" + "Dossier"*, for example; "MyDocumentDossier".
+2.  Template file named '_template'.
 
 ####Example
 ##### Directory Structure
