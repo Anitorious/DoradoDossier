@@ -5,6 +5,17 @@ Dorado Dossier is a '*work in progress*' project that aspires to be a documentat
 
 **N.B**: This project is currently in early stages of development and is not ready for use in production environments. Feedback is valuable to the improvement and growth of the project and every suggestion will be incorperated where appropriate.
 
+## Version Release Notes 
+*Minor Development Release V 0.1.2*
+
+* Introduced Dossier Configuration 
+* Introduced Trusted Rendering Modus 
+* Dossier Instantiation no longer requires a type, but all methods that belong to the object do 
+* Renamed IQueryDossier<T> to ISubject<T> 
+* Default Subject Handler amended from "Dossier" to "Subject" 
+* Razor Engine Templates now compiled with full trust by default 
+* Renamed Dorado Namespace
+
 ## Installation
 via Package Manager Console
 ```
