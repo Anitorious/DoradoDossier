@@ -75,6 +75,7 @@ string html = dossier.BindDossier("MyDocument");
 ## Roadmap
 * Use of RazorEngine Isolation API to prevent templates from being written to disk.
 * Implementation of alternative templating engines, for example; Handlebars, Moustache, Jade.
+* Support for more complex template models and ViewBag data.
 * Implementation of folio binding (Paged Documents) for paginating large documents.
 * Refactor of IResolverConfiguration to facilitate more flexibility in creation of dossiers.
 * Implementation of custom dossier renderers to give developers the ability to expand the Dorado toolset.
