@@ -81,6 +81,34 @@ Console.Write(document.BindDossier<IEnumerable<string>>("MyDocument"));
   <li>Bar</li>
 </ul>
 ```
+##### Custom Configuration
+*CustomResolverConfiguration.cs*
+```
+public class CustomResolverConfiguration : IResolverConfiguration
+    {
+        public string Location { get; set; }
+        public string Directory { get; set; }
+        public string SubjectHandle { get; set; }
+        public string TemplateHandle { get; set; }
+
+        public RenderMode RenderMode { get; set; }
+
+        public CustomResolverConfiguration()
+        {
+            Directory = "Reports";
+            SubjectHandle = "Report";
+            TemplateHandle = Dorado.Resources.IO.DefaultTemplateHandle;
+
+            RenderMode = RenderMode.Trusted;
+        }
+    }
+```
+
+*Usage*
+```
+IResolverConfiguration configuration = new CustomResolverConfiguration();
+var custom = new Dorado.Dossier(configuration);
+```
 
 ## Roadmap
 * Use of RazorEngine Isolation API to prevent templates from being written to disk.
