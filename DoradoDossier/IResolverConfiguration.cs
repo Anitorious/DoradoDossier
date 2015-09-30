@@ -1,6 +1,6 @@
-﻿using DoradoDossier.Enumerations;
+﻿using Dorado.Enumerations;
 
-namespace DoradoDossier
+namespace Dorado
 {
     public interface IResolverConfiguration
     {

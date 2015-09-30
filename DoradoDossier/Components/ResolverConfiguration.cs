@@ -1,6 +1,6 @@
-﻿using DoradoDossier.Enumerations;
+﻿using Dorado.Enumerations;
 
-namespace DoradoDossier.Components
+namespace Dorado.Components
 {
     internal sealed class ResolverConfiguration : IResolverConfiguration
     {

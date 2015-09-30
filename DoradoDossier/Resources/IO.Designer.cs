@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DoradoDossier.Resources {
+namespace Dorado.Resources {
     using System;
     
     

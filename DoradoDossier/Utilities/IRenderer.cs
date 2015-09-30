@@ -1,4 +1,4 @@
-﻿namespace DoradoDossier.Utilities
+﻿namespace Dorado.Utilities
 {
     internal interface IRenderer<T>
     {

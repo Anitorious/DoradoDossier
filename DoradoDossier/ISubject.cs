@@ -1,4 +1,4 @@
-﻿namespace DoradoDossier
+﻿namespace Dorado
 {
     public interface ISubject<T>
     {

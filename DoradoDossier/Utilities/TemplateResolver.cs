@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace DoradoDossier.Utilities
+namespace Dorado.Utilities
 {
     internal class TemplateResolver<T> : IResolver<T>
     {

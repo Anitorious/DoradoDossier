@@ -1,9 +1,9 @@
-﻿using DoradoDossier.Enumerations;
+﻿using Dorado.Enumerations;
 using RazorEngine.Configuration;
 using RazorEngine.Templating;
 using System.IO;
 
-namespace DoradoDossier.Utilities
+namespace Dorado.Utilities
 {
     internal class TemplateRenderer<T> : IRenderer<T>
     {

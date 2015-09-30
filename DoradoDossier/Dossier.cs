@@ -1,11 +1,11 @@
-﻿using DoradoDossier.Components;
-using DoradoDossier.Utilities;
+﻿using Dorado.Components;
+using Dorado.Utilities;
 using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace DoradoDossier
+namespace Dorado
 {
     public class Dossier
     {

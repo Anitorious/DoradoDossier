@@ -1,4 +1,4 @@
-﻿namespace DoradoDossier.Enumerations
+﻿namespace Dorado.Enumerations
 {
     public enum RenderMode
     {
