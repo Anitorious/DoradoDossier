@@ -1,4 +1,4 @@
-# Dorado Dossier 0.1.0
+# Dorado Dossier 0.1.2
 **Dossier**, A collection of papers giving detailed information about a particular person or subject.
 
 Dorado Dossier is a '*work in progress*' project that aspires to be a documentation & reporting library, leveraging the power of the .NET Razor Engine, to allow developers to create dynamic documents with minimal effort.
@@ -17,7 +17,7 @@ Dorado works on the basis that users of the library follow a strict naming conve
 
 Within this folder, we must create a folder for each document we'd like the library to resolve and render, with each folder containing:
 
-1. .cs file that inherits the IDossierQuery&lt;T&gt; interface with an alias of *"Parent Folder" + "Dossier"*, for example; "MyDocumentDossier".
+1. .cs file that inherits the ISubject&lt;T&gt; interface with an alias of *"Parent Folder" + "Subject"*, for example; "MyDocumentSubject".
 2.  Template file named '_template'.
 
 ####Example
@@ -25,17 +25,16 @@ Within this folder, we must create a folder for each document we'd like the libr
 ```
 |- Dossier
   |- MyDocument
-    |- MyDocumentDossier.cs
+    |- MyDocumentSubject.cs
     |- _template.cshtml
 ```
 ##### MyDocumentDossier.cs
 ```
-public class MyDocumentDossier : IDossierQuery<IQueryable<string>>
+public class MyDocumentSubject : ISubject<IEnumerable<string>>
 {
-    public IQueryable<string> ResolveTemplateQuery()
+    public IEnumerable<string> ResolveSubjectQuery()
     {
-        var l = new List<string>() { "Foo", "Bar" };
-         return l.AsQueryable();
+        return Enumerable.Select(new List<string>() { "Foo", "Bar" }, x => x);
     }
 }
 ```
@@ -58,10 +57,10 @@ at https://antaris.github.io/RazorEngine/
 
 ##### Usage
 ```
-Dossier<IQueryable<string>> dossier = new Dossier<IQueryable<string>>();
+var document = new Dorado.Dossier();
 
 // Binding a Dossier returns the rendered template as a string representation of the HTML output.
-string html = dossier.BindDossier("MyDocument");
+Console.Write(document.BindDossier<IEnumerable<string>>("MyDocument"));
 ```
 
 ##### Result
