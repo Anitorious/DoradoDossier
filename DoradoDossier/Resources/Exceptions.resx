@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="TemplateCouldNotBeFound" xml:space="preserve">
-    <value>Template could not be found at specified file path.</value>
+  <data name="SubjectCouldNotBeFound" xml:space="preserve">
+    <value>Dossier subject could not be instantiated. File could not be found.</value>
   </data>
 </root>

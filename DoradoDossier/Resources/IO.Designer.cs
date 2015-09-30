@@ -79,20 +79,20 @@ namespace DoradoDossier.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0}Dossier.
+        ///   Looks up a localized string similar to Subject.
         /// </summary>
-        internal static string DefaultQueryPath {
+        internal static string DefaultSubjectHandle {
             get {
-                return ResourceManager.GetString("DefaultQueryPath", resourceCulture);
+                return ResourceManager.GetString("DefaultSubjectHandle", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to \_template.cshtml.
         /// </summary>
-        internal static string DefaultTemplatePath {
+        internal static string DefaultTemplateHandle {
             get {
-                return ResourceManager.GetString("DefaultTemplatePath", resourceCulture);
+                return ResourceManager.GetString("DefaultTemplateHandle", resourceCulture);
             }
         }
     }

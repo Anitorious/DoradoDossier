@@ -38,8 +38,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dossier.cs" />
-    <Compile Include="IDossierQuery.cs" />
-    <Compile Include="Components\IResolverConfiguration.cs" />
+    <Compile Include="Enumerations\RenderMode.cs" />
+    <Compile Include="ISubject.cs" />
+    <Compile Include="IResolverConfiguration.cs" />
     <Compile Include="Components\ResolverConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Exceptions.Designer.cs">

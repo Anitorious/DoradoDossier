@@ -123,10 +123,10 @@
   <data name="DefaultDirectory" xml:space="preserve">
     <value>Dossier</value>
   </data>
-  <data name="DefaultQueryPath" xml:space="preserve">
-    <value>{0}Dossier</value>
+  <data name="DefaultSubjectHandle" xml:space="preserve">
+    <value>Subject</value>
   </data>
-  <data name="DefaultTemplatePath" xml:space="preserve">
+  <data name="DefaultTemplateHandle" xml:space="preserve">
     <value>\_template.cshtml</value>
   </data>
 </root>

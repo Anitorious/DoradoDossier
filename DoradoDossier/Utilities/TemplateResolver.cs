@@ -1,6 +1,4 @@
-﻿using DoradoDossier.Components;
-using System.IO;
-using System.Text;
+﻿using System.IO;
 
 namespace DoradoDossier.Utilities
 {
@@ -9,28 +7,23 @@ namespace DoradoDossier.Utilities
         private readonly IRenderer<T> Renderer;
         private readonly IResolverConfiguration Configuration;
 
-        internal TemplateResolver(IResolverConfiguration configuration)
+        internal TemplateResolver(IResolverConfiguration Configuration)
         {
-            Renderer = new TemplateRenderer<T>();
-            Configuration = configuration;
+            this.Configuration = Configuration;
+            Renderer = new TemplateRenderer<T>(Configuration);
         }
 
         public string ResolveTemplate(string name, T model)
         {
-            StringBuilder path = new StringBuilder(FetchDossierDirectoryPath(name));
-            path.Append(Resources.IO.DefaultTemplatePath);
-
-            return Renderer.Render(name, path.ToString(), model);
-        }
-
-        private string FetchDossierDirectoryPath(string name)
-        {
-            string path = Configuration.MapFilePath(name);
-
-            if (!Directory.Exists(path))
+            string directory = string.Format("{0}\\{1}\\{2}", Configuration.Location, Configuration.Directory, name);
+            if (!Directory.Exists(directory))
                 throw new DirectoryNotFoundException();
 
-            return path;
+            string path = string.Format("{0}{1}", directory, Configuration.TemplateHandle);
+            if (!File.Exists(path))
+                throw new FileNotFoundException(string.Format("File '{0}' could not be found at specified location '{1}'.", Configuration.TemplateHandle, directory));
+
+            return Renderer.Render(name, path, model);
         }
     }
 }

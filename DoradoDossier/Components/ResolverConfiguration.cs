@@ -1,25 +1,24 @@
-﻿namespace DoradoDossier.Components
+﻿using DoradoDossier.Enumerations;
+
+namespace DoradoDossier.Components
 {
-    internal class ResolverConfiguration : IResolverConfiguration
+    internal sealed class ResolverConfiguration : IResolverConfiguration
     {
         public string Location { get; set; }
         public string Directory { get; set; }
+        public string SubjectHandle { get; set; }
+        public string TemplateHandle { get; set; }
 
-        public ResolverConfiguration(string location)
+        public RenderMode RenderMode { get; set; }
+
+        public ResolverConfiguration(string Location)
         {
-            Location = location;
+            this.Location = Location;
             Directory = Resources.IO.DefaultDirectory;
-        }
+            SubjectHandle = Resources.IO.DefaultSubjectHandle;
+            TemplateHandle = Resources.IO.DefaultTemplateHandle;
 
-        public ResolverConfiguration(string location, string directory)
-        {
-            Location = location;
-            Directory = directory;
-        }
-
-        public string MapFilePath(string name)
-        {
-            return string.Format("{0}\\{1}\\{2}", Location, Directory, name);
+            RenderMode = RenderMode.Trusted;
         }
     }
 }

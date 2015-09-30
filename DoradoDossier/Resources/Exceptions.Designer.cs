@@ -61,11 +61,11 @@ namespace DoradoDossier.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Template could not be found at specified file path..
+        ///   Looks up a localized string similar to Dossier subject could not be instantiated. File could not be found..
         /// </summary>
-        internal static string TemplateCouldNotBeFound {
+        internal static string SubjectCouldNotBeFound {
             get {
-                return ResourceManager.GetString("TemplateCouldNotBeFound", resourceCulture);
+                return ResourceManager.GetString("SubjectCouldNotBeFound", resourceCulture);
             }
         }
     }
