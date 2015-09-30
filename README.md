@@ -85,23 +85,23 @@ Console.Write(document.BindDossier<IEnumerable<string>>("MyDocument"));
 *CustomResolverConfiguration.cs*
 ```
 public class CustomResolverConfiguration : IResolverConfiguration
+{
+    public string Location { get; set; }
+    public string Directory { get; set; }
+    public string SubjectHandle { get; set; }
+    public string TemplateHandle { get; set; }
+
+    public RenderMode RenderMode { get; set; }
+    
+    public CustomResolverConfiguration()
     {
-        public string Location { get; set; }
-        public string Directory { get; set; }
-        public string SubjectHandle { get; set; }
-        public string TemplateHandle { get; set; }
+        Directory = "Reports";
+        SubjectHandle = "Report";
+        TemplateHandle = Dorado.Resources.IO.DefaultTemplateHandle;
 
-        public RenderMode RenderMode { get; set; }
-
-        public CustomResolverConfiguration()
-        {
-            Directory = "Reports";
-            SubjectHandle = "Report";
-            TemplateHandle = Dorado.Resources.IO.DefaultTemplateHandle;
-
-            RenderMode = RenderMode.Trusted;
-        }
+        RenderMode = RenderMode.Trusted;
     }
+}
 ```
 
 *Usage*
