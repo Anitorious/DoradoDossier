@@ -127,6 +127,6 @@
     <value>Subject</value>
   </data>
   <data name="DefaultTemplateHandle" xml:space="preserve">
-    <value>\_template.cshtml</value>
+    <value>_template</value>
   </data>
 </root>

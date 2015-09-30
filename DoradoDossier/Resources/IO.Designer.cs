@@ -22,7 +22,7 @@ namespace Dorado.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class IO {
+    public class IO {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,10 +36,10 @@ namespace Dorado.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DoradoDossier.Resources.IO", typeof(IO).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Dorado.Resources.IO", typeof(IO).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace Dorado.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Dorado.Resources {
         /// <summary>
         ///   Looks up a localized string similar to \bin\.
         /// </summary>
-        internal static string Bin {
+        public static string Bin {
             get {
                 return ResourceManager.GetString("Bin", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace Dorado.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Dossier.
         /// </summary>
-        internal static string DefaultDirectory {
+        public static string DefaultDirectory {
             get {
                 return ResourceManager.GetString("DefaultDirectory", resourceCulture);
             }
@@ -81,16 +81,16 @@ namespace Dorado.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Subject.
         /// </summary>
-        internal static string DefaultSubjectHandle {
+        public static string DefaultSubjectHandle {
             get {
                 return ResourceManager.GetString("DefaultSubjectHandle", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to \_template.cshtml.
+        ///   Looks up a localized string similar to _template.
         /// </summary>
-        internal static string DefaultTemplateHandle {
+        public static string DefaultTemplateHandle {
             get {
                 return ResourceManager.GetString("DefaultTemplateHandle", resourceCulture);
             }

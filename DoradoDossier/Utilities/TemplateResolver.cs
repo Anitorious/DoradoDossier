@@ -19,7 +19,7 @@ namespace Dorado.Utilities
             if (!Directory.Exists(directory))
                 throw new DirectoryNotFoundException();
 
-            string path = string.Format("{0}{1}", directory, Configuration.TemplateHandle);
+            string path = string.Format("{0}\\{1}.cshtml", directory, Configuration.TemplateHandle);
             if (!File.Exists(path))
                 throw new FileNotFoundException(string.Format("File '{0}' could not be found at specified location '{1}'.", Configuration.TemplateHandle, directory));
 

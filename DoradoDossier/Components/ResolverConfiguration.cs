@@ -2,7 +2,7 @@
 
 namespace Dorado.Components
 {
-    internal sealed class ResolverConfiguration : IResolverConfiguration
+    internal class ResolverConfiguration : IResolverConfiguration
     {
         public string Location { get; set; }
         public string Directory { get; set; }
