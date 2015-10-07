@@ -79,7 +79,7 @@ namespace Dorado.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Subject.
+        ///   Looks up a localized string similar to Topic.
         /// </summary>
         public static string DefaultSubjectHandle {
             get {

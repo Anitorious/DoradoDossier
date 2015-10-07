@@ -1,6 +1,4 @@
-﻿using Dorado.Enumerations;
-
-namespace Dorado.Components
+﻿namespace Dorado.Components
 {
     internal class ResolverConfiguration : IResolverConfiguration
     {
@@ -9,16 +7,12 @@ namespace Dorado.Components
         public string SubjectHandle { get; set; }
         public string TemplateHandle { get; set; }
 
-        public RenderMode RenderMode { get; set; }
-
         public ResolverConfiguration(string Location)
         {
             this.Location = Location;
             Directory = Resources.IO.DefaultDirectory;
             SubjectHandle = Resources.IO.DefaultSubjectHandle;
             TemplateHandle = Resources.IO.DefaultTemplateHandle;
-
-            RenderMode = RenderMode.Trusted;
         }
     }
 }

@@ -1,10 +1,10 @@
 ﻿using System.IO;
 
-namespace Dorado.Utilities
+namespace Dorado.Components
 {
-    internal class TemplateResolver<T> : IResolver<T>
+    internal class TemplateResolver<T>
     {
-        private readonly IRenderer<T> Renderer;
+        private readonly TemplateRenderer<T> Renderer;
         private readonly IResolverConfiguration Configuration;
 
         internal TemplateResolver(IResolverConfiguration Configuration)

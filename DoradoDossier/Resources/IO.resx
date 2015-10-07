@@ -124,7 +124,7 @@
     <value>Dossier</value>
   </data>
   <data name="DefaultSubjectHandle" xml:space="preserve">
-    <value>Subject</value>
+    <value>Topic</value>
   </data>
   <data name="DefaultTemplateHandle" xml:space="preserve">
     <value>_template</value>

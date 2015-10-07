@@ -1,6 +1,4 @@
-﻿using Dorado.Enumerations;
-
-namespace Dorado
+﻿namespace Dorado
 {
     public interface IResolverConfiguration
     {
@@ -8,7 +6,5 @@ namespace Dorado
         string Directory { get; set; }
         string SubjectHandle { get; set; }
         string TemplateHandle { get; set; }
-
-        RenderMode RenderMode { get; set; }
     }
 }
