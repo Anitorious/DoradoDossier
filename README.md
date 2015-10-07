@@ -36,7 +36,7 @@ Within this folder, we must create a folder for each document we'd like the libr
 ```
 |- Dossier
   |- MyDocument
-    |- MyDocumentSubject.cs
+    |- MyDocumentTopic.cs
     |- _template.cshtml
 ```
 ##### MyDocumentDossier.cs
