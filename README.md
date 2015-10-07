@@ -28,7 +28,7 @@ Dorado works on the basis that users of the library follow a strict naming conve
 
 Within this folder, we must create a folder for each document we'd like the library to resolve and render, with each folder containing:
 
-1. .cs file that inherits the ISubject&lt;T&gt; interface with an alias of *"Parent Folder" + "Subject"*, for example; "MyDocumentSubject".
+1. .cs file that inherits the ITopic&lt;T&gt; interface with an alias of *"Parent Folder" + "Topic"*, for example; "MyDocumentTopic".
 2.  Template file named '_template'.
 
 ####Example
@@ -41,9 +41,9 @@ Within this folder, we must create a folder for each document we'd like the libr
 ```
 ##### MyDocumentDossier.cs
 ```
-public class MyDocumentSubject : ISubject<IEnumerable<string>>
+public class MyDocumentTopic : ITopic<IEnumerable<string>>
 {
-    public IEnumerable<string> ResolveSubjectQuery()
+    public IEnumerable<string> ResolveTopicQuery()
     {
         return Enumerable.Select(new List<string>() { "Foo", "Bar" }, x => x);
     }
@@ -91,15 +91,11 @@ public class CustomResolverConfiguration : IResolverConfiguration
     public string SubjectHandle { get; set; }
     public string TemplateHandle { get; set; }
 
-    public RenderMode RenderMode { get; set; }
-    
     public CustomResolverConfiguration()
     {
         Directory = "Reports";
         SubjectHandle = "Report";
         TemplateHandle = Dorado.Resources.IO.DefaultTemplateHandle;
-
-        RenderMode = RenderMode.Trusted;
     }
 }
 ```
@@ -111,7 +107,6 @@ var custom = new Dorado.Dossier(configuration);
 ```
 
 ## Roadmap
-* Use of RazorEngine Isolation API to prevent templates from being written to disk.
 * Implementation of alternative templating engines, for example; Handlebars, Moustache, Jade.
 * Support for more complex template models and ViewBag data.
 * Implementation of folio binding (Paged Documents) for paginating large documents.
